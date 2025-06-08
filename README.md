@@ -1,0 +1,38 @@
+ARDUINO RADAR WITH ULATRASONIC SENSOR AND SERVO MOTOR 
+
+This project is a "DIY Radar System* made using an *HC-SR04 ultrasonic sensor" and a "servo motor" with an "Arduino UNO". The servo rotates the sensor, and the Arduino calculates the distance to nearby objects.
+
+
+COMPONENTS USED:
+- Arduino UNO
+- Ultrasonic Sensor HC-SR04
+- Servo Motor (SG90 or equivalent)
+- Jumper wires
+- Breadboard or direct connections
+
+
+ HOW IT WORKS:
+1. The servo motor continuously rotates the ultrasonic sensor left and right.
+2. The HC-SR04 emits sound waves and measures how long it takes for the echo to return.
+3. Arduino calculates the distance and shows it on the serial monitor or a radar UI.
+
+
+ Circuit Connections:
+ HC-SR04:
+- VCC → 5V (Arduino)
+- GND → GND
+- Trig → Digital Pin 9
+- Echo → Digital Pin 10
+
+ Servo Motor:
+- VCC (Red) → 5V
+- GND (Black) → GND
+- Signal (Yellow) → Digital Pin 11
+
+
+CIRCUIT DIAGRAM:
+(Arduinoradar_circuitdiagram.jpg)
+
+
+AR:
+Arduino code is available in the arduino_radar_with_ultrasonic_sensor_001.INO file.
